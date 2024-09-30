@@ -1,0 +1,3 @@
+# Lecture34--What-Is-MongoDB--Cipherschools
+In this lecture we had an understanding of what mongoDB is and why mongoDB is the language we have selected of all the languages with same functionalities.
+Open source, optimistic, compact, fast and etc...

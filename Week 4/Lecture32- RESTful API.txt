@@ -1,0 +1,3 @@
+(* # Lecture32--RESTful-API-Cipherschools*) 
+In this lecture we have discussed about what is a RESTful API and it's role in making a connection of contact between front end and backend server
+how Restful API could uniquely be identified by the two parts : URL and The http method.
