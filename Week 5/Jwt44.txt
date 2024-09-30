@@ -1,0 +1,6 @@
+# Lecture45--Discussing-JWT-Cipherschools
+In this lecture,
+we have understood what JWT is with the analogy of a supermarket coupon provided by Mr.Shanthanu.
+How an encoded script contains Header, Payload and Verification Sign.
+How JWT provides tokens to the users based on their operations.
+We have also visited jwt.io where we could decrypt the script and access the details in the script.
