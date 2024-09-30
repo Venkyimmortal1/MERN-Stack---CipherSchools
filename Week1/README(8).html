@@ -1,0 +1,93 @@
+# Lecture9-Events-Cipherschools
+<!-- HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" />
+    <link rel="Stylesheet" href=""/> 
+    <title>Venkat's Website</title>
+</head>
+<body>
+    <main>
+
+    <!-- onclick is an event attribute here linked with HTML in 2 ways-->
+    <!-- <h1 onclick="innerHTML='This is after click!'">My Page Title</h1>  Another way to do the same-->
+    <h1 onclick="changeText(this)">My Page Title</h1>
+    <p>Nice caption goes here</p>
+
+    <article class="first_article">
+    <h2>List of amazing fruits</h2>
+    <p>Must eat fruits</p>
+    <div class="wrapper-1">
+    <ul class="apple-list">
+        <li class="apple">Apples</li>
+        <li class="orange">Oranges</li>
+        <li class="avacado">Avacados</li>
+        <li class="grape">Grapes
+    <ul>
+        <li class="type-1">Moon drops</li>
+        <li>Sultana</li>
+        <li>Concord</li>
+        <li>Crimson Seedless</li>
+    </ul>
+        </li>
+        <li class="banana">Banana</li>
+    </ul>
+    <button>Read Full List</button>
+    <h2>Amazing places in Kenya</h2>
+    <p>Must visit places in Kenya</p>
+    <div class="wrapper-2">
+    <ul class="places-list">
+        <li>Maasai Mara</li>
+        <li>Diani Beach</li>
+        <li>Watamu Beach</li>
+        <li>Amboseli national park</li>
+        <li>Lake Nakuru</li>
+    </ul>
+    <button>Read Full List</button><hr>
+    </div>
+    </div>
+    <div>
+        <button onclick="displayDate()">What's the time?</button>
+        <P>The time is:</P>
+        <p id="demo"></p>
+    </div>
+</article>
+<!-- <form> -->
+    <input type="text" id="firstName" onchange="upperCase()"/>
+<!-- </form> -->
+ <div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color: rgb(0, 229, 255); width: 120px; height:20px; padding: 30px;">Ex of mouse over.</div>
+ <div onmousedown="mDown(this)" onmouseup="mUp(this)" style="background-color: rgb(255, 0, 251); width: 120px; height:20px; padding: 30px;">Ex of mouse Up and Down.</div>
+
+ <!-- There are also functions like onmouseup(When mouse button is released) onmousedown(When mouse button is clicked) -->
+    </main>
+<script>
+    function changeText(id){
+        id.innerHTML='This is after click!'
+    }
+
+    function displayDate(){
+    document.getElementById("demo").innerHTML=new Date();
+    }
+    function upperCase(){
+        const x=document.getElementById("firstName");
+        x.value=x.value.toUpperCase();
+    }
+    function mOver(obj){
+        obj.innerHTML="Thank You.";
+    }
+    function mOut(obj){
+        obj.innerHTML="Mouse over me.";
+    }
+    function mDown(obj){
+        obj.style.backgroundColor="pink";
+        obj.innerHTML="Release Me";
+    }
+    function mUp(obj){
+        obj.style.backgroundColor="yellow";
+        obj.innerHTML="Thank You.";
+    }
+</script>
+</body>
+</html>
